@@ -11,6 +11,7 @@ import java.text.MessageFormat;
  * Created by tm on 16/8/24.
  */
 @WebServlet("/Post")
+
 public class Post extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //客户端是以UTF-8编码提交表单数据的，所以需要设置服务器端以UTF-8的编码进行接收，否则对于中文数据就会产生乱码
