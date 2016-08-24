@@ -18,19 +18,22 @@ public class HelloWorld extends HttpServlet {
     public void init() throws ServletException {
         message = "Hello world, this message is from servlet!";
     }
+    int i = 1;
+    public void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
 
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        //设置响应内容类型
-        resp.setContentType("text/html");
 
-        //设置逻辑实现
-        PrintWriter out = resp.getWriter();
-        out.println("<h1>" + message + "</h1>");
+        try {
+            Thread.sleep(1000*4);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        i++;
+        response.getWriter().write(i+"");
     }
 
-    @Override
-    public void destroy() {
-        super.destroy();
+    public void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        doGet(request, response);
     }
 }
