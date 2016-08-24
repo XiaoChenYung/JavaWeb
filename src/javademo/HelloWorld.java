@@ -3,6 +3,15 @@ package javademo;
 /**
  * Created by tm on 16/8/24.
  */
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.URLEncoder;
+
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -30,6 +39,10 @@ public class HelloWorld extends HttpServlet {
         }
         i++;
         response.getWriter().write(i+"");
+    }
+
+    private void download() {
+
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response)

@@ -10,7 +10,8 @@ import java.io.IOException;
 /**
  * Created by tm on 16/8/23.
  */
-@WebServlet(name = "ServletDemo")
+
+@WebServlet("/ServletDemo")
 public class ServletDemo extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
