@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.hibernate:hibernate-entitymanager:${hibernate.version}">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-entitymanager/${hibernate.version}/hibernate-entitymanager-${hibernate.version}.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-entitymanager/${hibernate.version}/hibernate-entitymanager-${hibernate.version}-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-entitymanager/${hibernate.version}/hibernate-entitymanager-${hibernate.version}-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
