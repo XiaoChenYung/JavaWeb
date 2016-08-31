@@ -5,12 +5,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * Created by tm on 16/8/29.
  */
 public class main {
-    public main() {
-        System.out.println("=====================初始化============");
+    private String name;
+
+    public void setName(String name) {
+        this.name = name;
     }
 
-    @RequestMapping(value = "/index")
-    public String indexJSP() {
-        return "/index";
+    public void printHello() {
+        System.out.println("Spring 3 : Hello ! " + name);
     }
 }
